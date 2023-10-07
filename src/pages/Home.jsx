@@ -34,11 +34,11 @@ function Home() {
         ))}
       </div>
       <div className="z-10">
-        <h1 className="flex items-center justify-center text-5xl md:text-9xl text-white font-semibold cursive">Vijay & Trisha</h1>
-        <h1 className="flex items-center justify-center tracking-[.4em] text-md mt-5 text-white great md:text-3xl">ARE GETTING MARRIED</h1>
+        <h1 className="flex items-center justify-center text-5xl md:text-9xl text-white font-semibold cursive ani">Vijay & Trisha</h1>
+        <h1 className="flex items-center justify-center tracking-[.4em] text-md mt-5 text-white great md:text-3xl ani">ARE GETTING MARRIED</h1>
         <div className="flex items-center justify-center">
           <div>
-            <hr />
+            <hr className="animated-hr" />
           </div>
           <div>
             <svg
@@ -55,11 +55,11 @@ function Home() {
             </svg>
           </div>
           <div>
-            <hr />
+            <hr className="animated-hr" />
           </div>
         </div>
-        <div className="flex items-center justify-center tracking-[.4em] text-md  text-white great md:text-3xl">JAN 26TH, 2024</div>
-        <div>
+        <div className="flex items-center justify-center tracking-[.4em] text-md  text-white great md:text-3xl ani1">JAN 26TH, 2024</div>
+        <div className="ani2">
           <Counter/>
         </div>
       </div>

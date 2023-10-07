@@ -3,7 +3,54 @@
 @tailwind utilities;
 .cursive {
   font-family: "Engagement", cursive;
+  
 }
+.ani{
+  opacity: 0;
+  animation: slideFadeIn 1.5s ease-out forwards;
+}
+
+@keyframes slideFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+.ani1{
+  opacity: 0;
+  animation: slideFade 2.5s ease-out forwards;
+}
+
+@keyframes slideFade {
+  0%,30% {
+    opacity: 0;
+    transform: translateY(+50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+.ani2{
+  opacity: 0;
+  animation: slideFade2 4.5s ease-out forwards;
+}
+
+@keyframes slideFade2 {
+  0%, 50% {
+    opacity: 0;
+    transform: translateY(+50px); 
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
 *{
   font-family: 'PT Serif', serif;
 }
@@ -18,8 +65,10 @@ img {
 }
 
 hr{
-    width: 10vw;
+    width: 20vw;
 }
+
+
 
 .show-counter .countdown-link {
   display: flex;
@@ -56,4 +105,31 @@ hr{
   font-family: 'Pixelify Sans', cursive;
   font-size: 1rem;
   line-height: 1rem;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(251, 208, 208, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0; 
+  transition: opacity 1s ease, transform 1s ease; 
+  transform-origin: center center; 
+  transform: scale(0); 
+}
+
+.loading-overlay.visible {
+  opacity: 1; 
+  transform: scale(1); 
+}
+
+.loading-overlay.hidden {
+  opacity: 0; 
+  transform: scale(0); 
+  pointer-events: none; 
 }
