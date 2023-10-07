@@ -33,7 +33,7 @@ function Home() {
           />
         ))}
       </div>
-      <div className="z-10">
+      <div className="z-10 flex items-center justify-center flex-col">
         <h1 className="flex items-center justify-center text-5xl md:text-9xl text-white font-semibold cursive ani">Vijay & Trisha</h1>
         <h1 className="flex items-center justify-center tracking-[.4em] text-md mt-5 text-white great md:text-3xl ani">ARE GETTING MARRIED</h1>
         <div className="flex items-center justify-center">
@@ -59,7 +59,7 @@ function Home() {
           </div>
         </div>
         <div className="flex items-center justify-center tracking-[.4em] text-md  text-white great md:text-3xl ani1">JAN 26TH, 2024</div>
-        <div className="ani2">
+        <div className="w-[80vw] flex items-center justify-center ani2">
           <Counter/>
         </div>
       </div>

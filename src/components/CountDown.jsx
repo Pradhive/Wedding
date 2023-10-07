@@ -4,9 +4,8 @@ import DateTimeDisplay from "./DateTimeDisplay";
 
 const ShowCounter = ({ days, hours, minutes, seconds }) => {
   return (
-    <div className="show-counter">
+    <div className="show-counter md:w-[35vw] w-[90vw]">
       <a
-        href=""
         target="_blank"
         className="countdown-link"
       >
